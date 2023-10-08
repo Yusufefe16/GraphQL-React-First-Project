@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.homePage {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.events {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li {
+  border: 1px solid rgba(0, 0, 0, 0.226);
+  padding: 10px;
+}
+
+.titleTime {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.eventList {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.eventDetailPage {
+  width: 70%;
+  margin: 50px auto;
+}
+
+.event {
+  border: 2px solid #ccc;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.event h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.event p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+
+.detailP{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detailP> p {
+    line-height: 1.8;
+}
+
+.link:link, .link:visited{
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.link:active, .link:hover {
+  color: #222;
+}
+
+.mainListItem{
+  border: 2px solid #ccc;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.example {
+  text-align: center;
+  background: rgba(0,0,0,0.02);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  margin: 20px 0;
+}
+
+.loadingData{
+  margin-top: 50px;
+  text-align: center;
+}
