@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { GET_EVENT } from "./queries";
 import Loading from "../../components/Loading/Loading";
+import { Link } from "react-router-dom";
 
 function Detail() {
   const { id } = useParams();
@@ -14,7 +15,9 @@ function Detail() {
   });
 
   if (loading) {
-    <div><Loading/></div>;
+    <div>
+      <Loading />
+    </div>;
   }
 
   if (error) {
@@ -28,7 +31,10 @@ function Detail() {
 
   return (
     <div className="eventDetailPage event">
-      <h2>{data.event.title}</h2>
+      <div className="updateButton">
+        <h2>{data.event.title}</h2>
+        <Link to={`/event/update/${id}`}>Update</Link>
+      </div>
       <div className="detailP">
         <p>
           <strong>Date:</strong> {data.event.date}
