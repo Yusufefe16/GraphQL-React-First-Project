@@ -4,7 +4,7 @@ import { useQuery } from "@apollo/client";
 import { GET_EVENT, UPDATE_EVENT } from "./queries";
 import Loading from "../../components/Loading/Loading";
 import { useMutation } from "@apollo/client";
-import { Formik, Field, Form, ErrorMessage } from "formik";
+
 
 function Update() {
   const { id } = useParams();
